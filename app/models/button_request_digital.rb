@@ -47,6 +47,7 @@ class ButtonRequestDigital
 
   def collection_valid?
     [
+      'Reserve Stacks',
       'Stacks',
       'Journal Collection',
       'Off Campus Collection',
@@ -75,6 +76,7 @@ class ButtonRequestDigital
       '13',
       '57',
       '15',
+      '24'
     ].include? @z30status_code
   end
 

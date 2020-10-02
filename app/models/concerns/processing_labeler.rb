@@ -90,7 +90,6 @@ module ProcessingLabeler
   # expect. This string is based on the item status in Aleph, but we edit it
   # for readability.
   def processing_label(status, z30_item_process, reserve)
-    return 'On reserve (see desk)' if reserve
     return 'Checked out' if checked_out?(status)
     return 'In Transit/Sublibrary; Requested' if in_transit?(status)
 
