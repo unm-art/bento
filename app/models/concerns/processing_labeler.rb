@@ -89,7 +89,7 @@ module ProcessingLabeler
   # the next action they should take or the amount of delay they should
   # expect. This string is based on the item status in Aleph, but we edit it
   # for readability.
-  def processing_label(status, z30_item_process, reserve)
+  def processing_label(status, z30_item_process)
     return 'Checked out' if checked_out?(status)
     return 'In Transit/Sublibrary; Requested' if in_transit?(status)
 
